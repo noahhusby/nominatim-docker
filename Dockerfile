@@ -4,6 +4,8 @@ FROM ubuntu:xenial as builder
 
 ARG nominatim_version
 
+ARG NOMINATIM_PBF_URL=${NOMINATIM_PBF_URL}
+
 # Let the container know that there is no TTY
 ARG DEBIAN_FRONTEND=noninteractive
 
